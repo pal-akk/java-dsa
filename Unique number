@@ -1,0 +1,12 @@
+public int findUnique(int[] arr) {
+        int n=arr.length;
+        int c=0; 
+        for(int num: arr){
+        c^=num;
+    }
+    return c;
+}
+/*Any number XOR-ed with itself becomes 0:
+a⊕a=0 a⊕a=0
+Any number XOR-ed with 0 stays the same:
+a⊕0=a a⊕0=a/*/
